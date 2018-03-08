@@ -15,9 +15,9 @@ class Recipe(Debug):
         for option, value in items:
             if value.startswith("`") and value.endswith("`"):
                 cmd = value[1:-1]
-                #with os.popen(cmd) as p:
-                #    new_value = p.read().strip()
-                new_value = system(cmd)   # checkout system's with_exit_code=True for a good laugh
+                with os.popen(cmd) as p:
+                    new_value = p.read().strip()
+                #new_value = system(cmd)   # checkout system's with_exit_code=True for a good laugh
  
                 self.options[option] = new_value
                 print("  %s=%r  <--  %r" % (option, new_value, value))
