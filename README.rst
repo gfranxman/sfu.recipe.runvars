@@ -14,7 +14,7 @@ A short example::
   username = somedewd
   password = `lpass show --password somedewd@some.api.com`
 
-Now you are free to use ${sekrets:username} and ${sekrets.password} in
+Now you are free to use ${sekrets:username} and ${sekrets:password} in
 other parts or templates as part of your buildout.
 
 This is useful for populating environment variables as part of system
