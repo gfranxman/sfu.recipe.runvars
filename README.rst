@@ -10,7 +10,7 @@ A short example::
 
 
   [sekrets]
-  recipe = sfu.recipe.runvars
+  recipe = sixfeetup.recipe.runvars
   username = somedewd
   password = `lpass show --password somedewd@some.api.com`
 
