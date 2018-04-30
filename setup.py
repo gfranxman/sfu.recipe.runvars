@@ -16,6 +16,7 @@ setup(
     long_description=long_description,
     version=version,
     license='BSD',
+    zip_safe=True,
     py_modules=['sixfeetup.recipe.runvars'],
     packages=find_packages(),
     entry_points={'zc.buildout': ['default=sixfeetup.recipe.runvars:Recipe']},
@@ -29,8 +30,14 @@ setup(
     keywords='runvars recipe',
     classifiers=[
         "Framework :: Buildout",
+        "Framework :: Buildout :: Recipe",
         "Programming Language :: Python",
+        "Programming Language :: Python :: 2",
+        "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Development Status :: 5 - Production/Stable",
         "Topic :: Software Development :: Libraries :: Python Modules",
+        "License :: OSI Approved :: BSD License",
     ],
 )
